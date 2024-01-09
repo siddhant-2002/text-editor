@@ -1,0 +1,74 @@
+.head{
+    background-color: #6839b5;
+}
+
+.second{
+    display: flex;
+    gap: 10px;
+}
+
+.text{
+    /* background-color: #121111; */
+    border: 1px solid black;
+    width: 70%;
+    height: 100vh;
+}
+
+.edit{
+    border: 1px solid black;
+    width: 30%;
+    height: 100vh;
+    row-gap: 10px;
+}
+
+span{
+    display: block;
+}
+
+.font-size{
+    
+}
+
+.div-1{
+    display: flex;
+    justify-content: center;
+    /* vertical-align: middle; */
+    align-items: center;
+    flex-direction: column;
+    /* padding: 10px; */
+}
+.text-box{
+    height: 100px;
+    width: 400px;
+    margin: 10px;
+}
+
+.div-2{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* vertical-align: middle; */
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+.add-button{
+    width: 380px;
+    height: 30px;
+}
+.div-3{
+    display: flex;
+    justify-content: center;
+    /* vertical-align: middle; */
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+.div-4{
+    display: flex;
+    justify-content: center;
+    /* vertical-align: middle; */
+    align-items: center;
+    gap: 10px;
+    /* flex-direction: column; */
+}
