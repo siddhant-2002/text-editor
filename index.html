@@ -1,63 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
+
 <body>
-    
-    <div class="head">
-        <h1>Text Editor</h1>
-    </div>
-    <div class="second">
-        <div class="text">
-            <p></p>
-        </div>
 
-        <div class="edit">
-            <div class="div-1">
-                <input type="text" class="text-box" >
-                <button class="add-button">Add</button>
-            </div>
-           
-            <div class="div-2">
-                <p>Font size :</p>
-                <select  name="font-size">
-                    <option value="10">10</option>
-                    <option value="12">12</option>
-                    <option value="14">14</option>
-                    <option value="16">16</option>
-                </select>
+    <div class="wrapper">
 
-                <p>change Color</p>
-                <input type="color">
-            </div>
-            <div class="div-3">
-                <p>Font family :</p>
-                <select  name="font-family">
-                    <option value="10">asda</option>
-                    <option value="12">adsa</option>
-                    <option value="14">asdfsa</option>
-                    <option value="16">asdfsg</option>
-                </select>
-            </div>
-
-            <!-- <span class="font-size">
-                <p>change Color</p>
-                <input type="color">
-            </span> -->
-
-            <div class="div-4">
-                <button>undo</button>
-                <button>redo</button>
-            </div>
+        <section class="editor">
             
-        </div>
+            <div class="row">
+                
+                <div class="col">
+
+                    <div class="row">
+                        
+                        <div class="box">
+                            <button type="button" onclick="addText()">Add Text</button>
+                            <button type="button" onclick="deleteText()" >Delete Text</button>
+                        </div>
+                       
+                    </div>
+
+                    <br>
+
+                    <div class="family box">
+                        <label for="font-family">Font-Family</label>
+                        <select id="font-family">
+                            <option value="Arial, sans-serif">Arial</option>
+                            <option value="Times New Roman, Times, serif">Times New Roman</option>
+                            <option value="Georgia, serif">Georgia</option>
+                        </select>
+
+                    </div>
+
+                    <div class="box1">
+                        <div class="first box">
+                            <input id="font_size" type="number" value="16" min="1" max="100" >
+                        </div>
+                        <div class="color box">
+                            <label for="color-picker"></label>
+                            <input type="color" name="color-picker" id="color-picker">
+                        </div>
+                    </div>
+
+                    <div class="fifth box">
+                        <button type="button" onclick="undo()">
+                            Undo
+                        </button>
+                        <button type="button" onclick="redo()">
+                            Redo
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+                
+        </section>
+
+        <section class="space">
+            <div class="text">
+
+                <div id="canvas">
+                    <!-- <img src="greeting.jpg" alt=""> -->
+                </div>
+
+            </div>
+        </section>
+
     </div>
-        
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>
